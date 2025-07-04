@@ -5,11 +5,15 @@
   "main": "src/index.ts",
   "module": "./src/index.ts", 
   "type": "module",
+  "bin": {
+    "integrated-dev-mcp": "./dist/index.js"
+  },
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
     "build:cjs": "tsc --module commonjs --outDir dist-cjs",
     "prebuild": "npm install",
+    "prepublishOnly": "npm run build",
     "test": "echo \"No tests yet\""
   },
   "keywords": [
@@ -19,6 +23,9 @@
   "author": "Su",
   "license": "MIT",
   "files": ["src", "README.md", "smithery.json", "smithery.yaml"],
+  "publishConfig": {
+    "access": "public"
+  },
   "engines": {
     "node": ">=18.0.0"
   },
