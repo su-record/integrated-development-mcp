@@ -6,7 +6,8 @@
   "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
-    "build": "tsc --noEmit",
+    "build": "tsc",
+    "prebuild": "npm install",
     "test": "echo \"No tests yet\""
   },
   "keywords": [
