@@ -1,5 +1,5 @@
 {
-  "name": "@su-recorde/integrated-development-mcp",
+  "name": "@su-record/integrated-development-mcp",
   "description": "모든 개발 도구를 하나로 통합한 MCP - Frontend, Flutter, Python, Supabase",
   "version": "1.0.0",
   "author": "Su",
@@ -8,9 +8,9 @@
     "development", "fullstack", "frontend", "backend",
     "mobile", "database", "automation"
   ],
-  "homepage": "https://github.com/su-recorde/integrated-development-mcp",
-  "repository": "https://github.com/su-recorde/integrated-development-mcp",
-  "readme": "https://github.com/su-recorde/integrated-development-mcp/blob/main/README.md",
+  "homepage": "https://github.com/su-record/integrated-development-mcp",
+  "repository": "https://github.com/su-record/integrated-development-mcp",
+  "readme": "https://github.com/su-record/integrated-development-mcp/blob/main/README.md",
   "icon": "🚀",
   "capabilities": {
     "tools": true,

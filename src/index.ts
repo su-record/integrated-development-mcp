@@ -25,7 +25,7 @@ import { integrationTools } from './tools/integration/index';
 // 서버 생성
 const server = new Server(
   {
-    name: '@su-recorde/integrated-development-mcp',
+    name: '@su-record/integrated-development-mcp',
     version: '1.0.0',
   },
   {
