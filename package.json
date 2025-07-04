@@ -2,11 +2,12 @@
   "name": "@su-recorde/integrated-development-mcp",
   "version": "1.0.0",
   "description": "모든 개발 도구를 하나로 - 통합 개발 툴킷 MCP",
-  "main": "src/index.ts",
-  "type": "module",
+  "main": "index.js",
+  "type": "commonjs",
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist-cjs",
     "prebuild": "npm install",
     "test": "echo \"No tests yet\""
   },

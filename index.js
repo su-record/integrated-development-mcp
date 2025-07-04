@@ -1,1 +1,2 @@
-import "./src/index.ts";
+require("tsx/cjs");
+module.exports = require("./src/index.ts");
