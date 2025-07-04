@@ -36,7 +36,7 @@ MCP 설정 파일에 다음 내용을 추가하세요:
   "mcpServers": {
     "integrated-dev": {
       "command": "npx",
-      "args": ["@su-record/integrated-development-mcp"],
+      "args": ["-y", "@su-record/integrated-development-mcp"],
       "env": {
         "GITHUB_TOKEN": "ghp_your_token_here",
         "SUPABASE_URL": "https://your-project.supabase.co",
@@ -46,6 +46,8 @@ MCP 설정 파일에 다음 내용을 추가하세요:
   }
 }
 ```
+
+> 💡 **팁**: `-y` 플래그를 추가하여 자동 설치를 활성화합니다.
 
 ### 환경 변수 (선택사항)
 
