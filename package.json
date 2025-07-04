@@ -1,0 +1,41 @@
+{
+  "name": "@su-recorde/integrated-development-mcp",
+  "version": "1.0.0",
+  "description": "모든 개발 도구를 하나로 - 통합 개발 툴킷 MCP",
+  "main": "src/index.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "tsx src/index.ts",
+    "build": "tsc --noEmit",
+    "test": "echo \"No tests yet\""
+  },
+  "keywords": [
+    "mcp", "integrated", "development", "frontend", "backend", 
+    "flutter", "python", "supabase", "github", "smithery"
+  ],
+  "author": "Su",
+  "license": "MIT",
+  "files": ["src", "README.md", "smithery.json", "smithery.yaml"],
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0",
+    "zod": "^3.23.8",
+    "@supabase/supabase-js": "^2.45.0",
+    "@octokit/rest": "^21.0.1",
+    "axios": "^1.7.3",
+    "cheerio": "^1.0.0",
+    "dayjs": "^1.11.12",
+    "fs-extra": "^11.2.0"
+  },
+  "optionalDependencies": {
+    "puppeteer-core": "^22.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/fs-extra": "^11.0.4",
+    "typescript": "^5.5.4",
+    "tsx": "^4.16.2"
+  }
+}

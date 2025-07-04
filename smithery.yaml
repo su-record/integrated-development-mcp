@@ -1,0 +1,16 @@
+runtime: "typescript"
+
+env:
+  NODE_ENV: "production"
+
+config:
+  env:
+    - name: GITHUB_TOKEN
+      description: "GitHub API access token for repository operations"
+      required: false
+    - name: SUPABASE_URL
+      description: "Supabase project URL"
+      required: false
+    - name: SUPABASE_ANON_KEY
+      description: "Supabase anonymous key"
+      required: false
