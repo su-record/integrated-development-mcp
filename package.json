@@ -3,6 +3,7 @@
   "version": "1.0.4",
   "description": "모든 개발 도구를 하나로 - 통합 개발 툴킷 MCP",
   "main": "dist/index.js",
+  "module": "dist/index.js",
   "type": "module",
   "exports": {
     ".": "./dist/index.js"
