@@ -10,17 +10,17 @@ import {
 import { z } from 'zod';
 
 // 도구 임포트 (.js 확장자 없음!)
-import { thinkingTools } from './tools/thinking/index';
-import { contextTools } from './tools/context/index';
-import { timeTools } from './tools/time/index';
-import { uiTools } from './tools/ui/index';
-import { githubTools } from './tools/github/index';
-import { browserTools } from './tools/browser/index';
-import { frontendTools } from './tools/frontend/index';
-import { flutterTools } from './tools/flutter/index';
-import { pythonTools } from './tools/python/index';
-import { supabaseTools } from './tools/supabase/index';
-import { integrationTools } from './tools/integration/index';
+import { thinkingTools } from './tools/thinking/index.js';
+import { contextTools } from './tools/context/index.js';
+import { timeTools } from './tools/time/index.js';
+import { uiTools } from './tools/ui/index.js';
+import { githubTools } from './tools/github/index.js';
+import { browserTools } from './tools/browser/index.js';
+import { frontendTools } from './tools/frontend/index.js';
+import { flutterTools } from './tools/flutter/index.js';
+import { pythonTools } from './tools/python/index.js';
+import { supabaseTools } from './tools/supabase/index.js';
+import { integrationTools } from './tools/integration/index.js';
 
 // 서버 생성
 const server = new Server(
@@ -51,8 +51,12 @@ const ALL_TOOLS = {
 };
 
 // 도구 목록 핸들러
-server.setRequestHandler(ListToolsRequestSchema, async () => ({
-  tools: Object.entries(ALL_TOOLS).map(([name, tool]) => ({
+server.setRequestHandler(ListToolsRequestSchema, async () => {
+  console.error('🔍 ListTools 요청 받음!');
+  console.error('📦 ALL_TOOLS 키:', Object.keys(ALL_TOOLS));
+  console.error('🔢 도구 개수:', Object.keys(ALL_TOOLS).length);
+  
+  const tools = Object.entries(ALL_TOOLS).map(([name, tool]) => ({
     name,
     description: tool.description,
     inputSchema: {
@@ -68,8 +72,12 @@ server.setRequestHandler(ListToolsRequestSchema, async () => ({
         ])
       ) : {},
     },
-  })),
-}));
+  }));
+  
+  console.error('📋 반환할 도구들:', tools.map(t => t.name));
+  
+  return { tools };
+});
 
 // 도구 실행 핸들러
 server.setRequestHandler(CallToolRequestSchema, async (request) => {
