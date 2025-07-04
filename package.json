@@ -2,8 +2,9 @@
   "name": "@su-recorde/integrated-development-mcp",
   "version": "1.0.0",
   "description": "모든 개발 도구를 하나로 - 통합 개발 툴킷 MCP",
-  "main": "index.js",
-  "type": "commonjs",
+  "main": "src/index.ts",
+  "module": "./src/index.ts", 
+  "type": "module",
   "scripts": {
     "dev": "tsx src/index.ts",
     "build": "tsc",
