@@ -1,5 +1,8 @@
 # 통합 개발 툴킷 MCP 🚀
 
+[![npm version](https://badge.fury.io/js/@su-record%2Fintegrated-development-mcp.svg)](https://www.npmjs.com/package/@su-record/integrated-development-mcp)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 모든 개발 도구를 하나로 통합한 MCP (Model Context Protocol)
 
 ## 🎯 특징
