@@ -1,7 +1,7 @@
 {
   "name": "@su-record/integrated-development-mcp",
   "description": "모든 개발 도구를 하나로 통합한 MCP - Frontend, Flutter, Python, Supabase",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "author": "Su",
   "license": "MIT",
   "categories": [
